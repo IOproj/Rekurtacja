@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+.r-row::after {
+  content: "";
+  clear: both;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+[class*="col-"] {
+  
+  padding: 10px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 100%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 100%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.r-header {
+  color: #ffffff;
+  padding: 15px;
+}
+
+.r-menu{
+  height: 100vw;
+  background-color: black;
+  color: white;
+  text-align: left;
+}
+
+.r-menu label{
+  font-size: 50px;
+}
+
+.r-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+}
+
+.r-menu a{
+  font-size: 40px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 1s ease;
+}
+
+.r-menu li {
+  padding: 18px;
+  margin-bottom: 20px;
+  background-color: black;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.r-menu li.interactive:hover {
+  background-color: #0c0d0d;
+}
+
+.r-menu a:hover{
+  color: royalblue;
+}
+.r-menu img{
+  width: 32px;
+  height: 32px;
+}
+
+.r-content input{
+  
+  background-color: rgb(46, 139, 226);
+  margin: 2px;
+  padding: 10px;
+  border-radius: 6px;
+  border: solid;
+  border-color: royalblue;
+  border-width: 2px;
+}
+
+.r-content label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ font-size: 30px;
+  margin-bottom: 4px;
+  border-bottom-color: red;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+}
+
+.r-content button{
+ 
+  background-color: rgb(46, 139, 226);
+  margin: 2px;
+  padding: 10px;
+  border-radius: 6px;
+  border: solid;
+  border-color: royalblue;
+  border-width: 2px;
+}
+
+.r-content select{
+ 
+  background-color: rgb(46, 139, 226);
+  margin: 4px;
+  padding: 10px;
+  border-radius: 6px;
+  border: solid;
+  border-color: royalblue;
+  border-width: 2px;
+}
